@@ -1,4 +1,3 @@
-
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=shellinabox
@@ -6,12 +5,14 @@ PKG_VERSION:=2.20
 PKG_RELEASE:=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/shellinabox/shellinabox.git
+PKG_SOURCE_URL:=https://github.com/adde88/shellinabox.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=98e6eebc6c2026fb126a458c6cb5a2541447258e
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 
 PKG_FIXUP:=autoreconf
+
+PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>
 
 include $(INCLUDE_DIR)/package.mk
 
